@@ -8,8 +8,8 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
   
-fromaddr = "chinuchandani@gmail.com"
-toaddr = "divyachandani81@gmail.com"
+fromaddr = "senders email id"
+toaddr = "receivers email id"
   
 # instance of MIMEMultipart
 msg = MIMEMultipart()
@@ -31,7 +31,7 @@ msg.attach(MIMEText(body, 'plain'))
  
 # open the file to be sent 
 filename = "Untitled.png"
-attachment = open("C:/Users/Chandni Chandani/Desktop/summer trainig/AARMON TECH/18may import library and smtplib/Untitled.png", "rb")
+attachment = open("path to image file", "rb")
  
 # instance of MIMEBase and named as p
 p = MIMEBase('application', 'octet-stream')
@@ -54,7 +54,7 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
  
 # Authentication
-s.login(fromaddr, "Chandni12")
+s.login(fromaddr, "senders password")
  
 # Converts the Multipart msg into a string
 text = msg.as_string()
