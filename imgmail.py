@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
   
-fromaddr = "senders email id"
+fromaddr = "senders email id" #enable less secure apps access to your account
 toaddr = "receivers email id"
   
 # instance of MIMEMultipart
@@ -64,4 +64,4 @@ s.sendmail(fromaddr, toaddr, text)
  
 # terminating the session
 s.quit()
-print "Congratulations"
+print "Congratulations! You'r done"
