@@ -83,4 +83,4 @@ s.sendmail(fromaddr, toaddr, text)
  
 # terminating the session
 s.quit()
-print "Congratulations"
+print "Congratulations! you'r done"
